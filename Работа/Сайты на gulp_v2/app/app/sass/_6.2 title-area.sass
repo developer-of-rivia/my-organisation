@@ -1,0 +1,23 @@
+@import "1 vars.sass"
+@import "2 media-mix.sass"
+// title-area module
+.title-area
+    display: flex
+    align-items: center
+    column-gap: 10px
+.title-area__sub
+    font-weight: 700
+    color: $prim
+    font-size: 18px
+    +xs
+        font-size: 16px
+    span
+        font-weight: 700
+.title-area__all
+    margin-left: auto
+    color: $prim
+    font-size: 14px
+    +xs
+        width: 100%
+    &:hover
+        text-decoration: underline

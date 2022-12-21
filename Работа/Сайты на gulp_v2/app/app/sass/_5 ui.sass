@@ -1,0 +1,67 @@
+@import "1 vars.sass"
+@import "2 media-mix.sass"
+/* --- UI KIT --- */
+.overflow-none
+    overflow: hidden
+/* btn */
+.btn
+    display: inline-block
+    background: #f8da4e
+    font-size: 15px
+    color: #000
+    text-align: center
+    padding: 12px 0
+    cursor: pointer
+    transition: 0.2s ease
+    &:hover
+        background: rgb(255, 208, 0)
+/* input */
+.input
+    background: #fff
+    border: 1px solid #dde3e3
+/* checkbox */
+// Контейнер
+.checkbox
+    display: flex
+    align-items: center
+    width: 100%
+    cursor: pointer
+// Сам квадратик
+.checkbox input[type=checkbox]
+    -webkit-appearance: none
+    -moz-appearance: none
+    display: inline-block
+    flex: 0 0 22px
+    height: 22px
+    cursor: pointer
+    border: 1px solid #ccc
+    margin-right: 10px
+.checkbox input[type=checkbox]:checked
+    background: url('../img/icons/checkbox-icon.png') no-repeat center center, $prim !important
+    border-color: $prim
+.checkbox__content
+    color: #555
+    font-size: 12px
+    text-transform: none
+/* scroll bar */
+.simplebar-track.simplebar-vertical
+    background-color: #e8efef
+    width: 5px
+    margin-right: 3px
+    margin-top: 3px
+    margin-bottom: 3px
+.simplebar-content-wrapper
+    padding-right: 15px
+.simplebar-scrollbar::before
+    left: 0
+    top: 0
+    right: 0
+    bottom: 0
+    opacity: 1
+    background-color: #7ab6ab
+    border-radius: 0
+.simplebar-track.simplebar-vertical .simplebar-scrollbar::before
+    top: 0
+    bottom: 0
+.simplebar-scrollbar.simplebar-visible::before
+    opacity: 1
