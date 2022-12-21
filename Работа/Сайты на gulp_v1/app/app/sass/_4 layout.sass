@@ -1,0 +1,35 @@
+.page__wrapper
+	display: grid
+	grid-template-columns: minmax(auto, 302px) minmax(900px, 960px)
+	justify-content: space-between
+	gap: 28px
+	+lg
+		grid-template-columns: minmax(240px, 2fr) minmax(500px, 7fr)
+	+md
+		grid-template-columns: 100%
+.container
+	max-width: 1320px
+	padding: 0 15px
+	margin: 0 auto
+.container--inner
+	max-width: 980px
+/* для маленьких мониторов и больших планшетов и обычных планшетов в горизонтальной ротации */
+/* т.е мониторы и плашеты (1024-1260) */
+@media screen and (max-width: 1260px)
+	.container
+		width: 100%
+/* для обычных планшетов в вертикальной ротации */
+/* т.е плашеты (650-991) */
+@media screen and (max-width: 991px)
+	.container
+		max-width: 685px
+/* для телефонов */
+/* т.е телефоны (320-650) */
+@media screen and (max-width: 700px)
+	.container
+		max-width: 100%
+@media screen and (max-width: 574px)
+	.container
+		width: 100%
+		padding: 0 20px
+		max-width: 100%

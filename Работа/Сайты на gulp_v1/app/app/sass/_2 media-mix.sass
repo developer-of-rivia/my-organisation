@@ -1,0 +1,36 @@
+// Using
+// body
+    // background: pink
+    // +_lg
+        // background: red
+
+@mixin lg
+    @media (max-width: 1260px)
+        @content
+
+@mixin media_1060
+    @media (max-width: 1060px)
+        @content
+
+@mixin md
+    @media (max-width: 991px)
+        @content
+
+@mixin sm
+    @media (max-width: 700px)
+        @content
+
+@mixin xs
+    @media (max-width: 574px)
+        @content
+
+@mixin media_450
+    @media (max-width: 450px)
+        @content
+@mixin media_400
+    @media (max-width: 450px)
+        @content
+
+@mixin media_360
+    @media (max-width: 360px)
+        @content

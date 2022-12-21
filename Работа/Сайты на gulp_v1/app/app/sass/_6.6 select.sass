@@ -1,0 +1,52 @@
+@import "1 vars.sass"
+@import "2 media-mix.sass"
+// select module
+.select__chosed-icon
+    margin-left: 10px
+.select
+    width: 100%
+    border: 1px solid #dde3e3
+    position: relative
+.select__box
+    display: none
+.select__box.select__box--active
+    display: flex
+.select__head
+    cursor: pointer
+    display: flex
+    align-items: center
+    background: #fff
+    padding-left: 10px
+    padding-right: 10px
+    background-image: url(../img/icons/ungle-down-green.svg)
+    background-repeat: no-repeat
+    background-position: calc(100% - 10px) center
+    color: #555
+.select__head--active
+    border: 1px solid #229781
+    background-image: url(../img/icons/ungle-top-green.svg)
+.select__box
+    position: absolute
+    right: 0
+    background: #fff
+    width: 100%
+    min-width: 100px
+    top: 28px
+    z-index: 9999
+    border: 1px solid #dde3e3
+    flex-direction: column
+    padding: 10px
+.select__item
+    cursor: pointer
+    padding: 8px 10px
+    img
+        display: none
+    &:hover
+        background: #dde3e3
+// select 2
+.select__head2.select__head
+    background-color: $prim
+    background-image: url(../img/icons/ungle-down-yellow.svg)
+    background-position: calc(100% - 15px) center
+    background-repeat: no-repeat
+    color: #fff

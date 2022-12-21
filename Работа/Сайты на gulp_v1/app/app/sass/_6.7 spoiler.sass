@@ -1,0 +1,48 @@
+@import "1 vars.sass"
+@import "2 media-mix.sass"
+/* spoilers module */
+// spoiler--mobile
+.spoiler__head--mobile
+    background: $prim
+    height: 40px
+    padding: 10px 20px
+    display: inline-block
+    color: #fff
+    +xs
+        background: url(../img/icons/ungle-bottom-white.svg) no-repeat calc(100% - 20px) center, $prim
+        color: #fff
+        text-decoration: none
+        width: 100%
+        font-weight: 700
+.spoiler__body--mobile
+    background: #f1f5f5
+    padding: 22px 18px
+    display: flex
+    flex-direction: column
+    gap: 16px
+.spoiler.active
+    .spoiler__head--mobile
+        +xs
+            background: url(../img/icons/ungle-top-white.svg) no-repeat calc(100% - 20px) center, $prim
+// spoiler--fromtabs
+.spoiler__head--fromtabs
+    display: none
+    +xs
+        display: flex
+        align-items: center
+        color: $prim
+        background: url(../img/icons/small-arrow-bottom.svg) no-repeat calc(100% - 20px) center, #F1F5F6
+        height: 40px
+        padding-left: 20px
+.spoiler--fromtabs.active
+    .spoiler__head--fromtabs
+        background: url(../img/icons/big-arrow-top.svg) no-repeat calc(100% - 20px) center, #F1F5F6
+// spoiler--tablet
+.spoiler--tablet
+    .spoiler__head--tablet
+        +md
+            color: $prim
+            background: url(../img/icons/small-arrow-bottom.svg) no-repeat calc(100% - 20px) center, #F1F5F6
+.spoiler--tablet.active
+    .spoiler__head--tablet
+        background: url(../img/icons/big-arrow-top.svg) no-repeat calc(100% - 20px) center, #F1F5F6

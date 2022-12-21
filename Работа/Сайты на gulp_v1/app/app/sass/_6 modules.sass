@@ -1,0 +1,125 @@
+@import "1 vars.sass"
+@import "2 media-mix.sass"
+// title
+.title
+    font-size: 28px
+    font-weight: 500
+    span
+        font-weight: 500
+    +xs
+        font-size: 25px
+        margin-bottom: 8px
+.title--small
+    font-size: 20px
+    font-weight: 700
+    +xs
+        font-size: 20px
+// slider-dots--first
+.slider-dots--first
+    .slick-dots
+        display: flex
+        align-items: center
+        gap: 14px
+        +xs
+            gap: 8px
+        li
+            button
+                width: 8px
+                height: 8px
+                background: #aec2bb
+                border-radius: 50px
+                font-size: 0
+                cursor: pointer
+                +xs
+                    width: 6px
+                    height: 6px
+            &.slick-active
+                button
+                    background: $prim
+// slider-dots--second
+.slider-dots--second
+    .slick-dots
+        display: flex
+        align-items: center
+        gap: 14px
+        li
+            button
+                color: $prim
+                cursor: pointer
+                background: none
+// slider__arrow--first
+.slider__arrows--first
+    width: 270px
+    margin: 0 auto
+    display: flex
+    justify-content: space-between
+.slider__arrow--first
+    background: none
+    i
+        font-size: 30px
+        color: #92a8a0
+        cursor: pointer
+        &:hover
+            color: $prim
+        +md
+            font-size: 32px
+// slider__arrows--fluid
+.slider__arrows--fluid
+    @extend .slider__arrows--first
+    width: 100%
+// tabs
+.tabs__link
+    color: $prim
+    display: inline-block
+    padding: 12px 20px
+    cursor: pointer
+    &:hover
+        text-decoration: none
+    span
+        border-bottom: 1px dashed $prim
+.tabs__link.active
+    font-size: 16px
+    font-weight: 700
+    color: #fff
+    background: $prim
+    display: inline-block
+    text-decoration: none
+/* slider-pags--first */
+.slider-pags--first
+    text-align: center
+    color: $prim
+    font-size: 14px
+    font-weight: 700
+    font-style: italic
+    margin-bottom: -30px
+    height: 26pX
+    span
+        font-size: 18px
+/* popup */
+.popup
+    background: #fff
+    position: relative
+    margin: 0 auto
+    display: block
+    padding: 25px 30px
+    .checkbox__content
+        font-size: 11px
+        color: #869596
+    input
+        filter: grayscale(70%)
+.popup__title
+    font-weight: 700
+    font-size: 22px
+    color: #000
+    margin-bottom: 28px
+.popup__input
+    width: 100%
+    height: 40px
+    padding-left: 20px
+.popup__field
+    margin-bottom: 10px
+.popup__btn
+    width: 100%
+.popup__accept
+    margin-top: 10px
+    margin-bottom: 20px
